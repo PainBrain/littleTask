@@ -16,6 +16,8 @@ class LittleTaskTest {
 
     @ParameterizedTest
     @CsvSource({
+     ", , false",
+     "'', '', true",
      ", 30, false",
      "\\d+, , false",
      "\\d+, 30, true",
